@@ -1,0 +1,9 @@
+[INFO ] 20/Jun/2016 16:22:59,886 PhysicalOperation [main] - powerConsume - Left power calculated
+[INFO ] 20/Jun/2016 16:22:59,905 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 16:22:59,905 PhysicalOperation [main] - powerConsume - Left power calculated
+[ERROR] 20/Jun/2016 16:22:59,906 Robot [main] - checkWeight - Overweight...Robot can't pick more than 10 Kg weight
+[INFO ] 20/Jun/2016 16:59:28,247 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 16:59:28,248 PhysicalOperation [main] - powerConsume - Left power calculated
+[INFO ] 20/Jun/2016 16:59:28,250 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 16:59:28,250 PhysicalOperation [main] - powerConsume - Left power calculated
+[ERROR] 20/Jun/2016 16:59:28,251 Robot [main] - checkWeight - Overweight...Robot can't pick more than 10 Kg weight

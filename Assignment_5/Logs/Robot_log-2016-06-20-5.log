@@ -1,0 +1,10 @@
+[INFO ] 20/Jun/2016 14:01:24,197 RobotAPI [main] - main - Initialised the Robot attributes
+[INFO ] 20/Jun/2016 14:01:24,217 RobotAPI [main] - main - Power: 100.0
+[INFO ] 20/Jun/2016 14:01:24,217 RobotAPI [main] - main - Added Weight: 3.0
+[INFO ] 20/Jun/2016 14:01:24,217 RobotAPI [main] - main - How far robot should go :2.0
+[INFO ] 20/Jun/2016 14:01:24,218 PhysicalOperation [main] - calculateWalkDistance - Calculating the distance that robot should walk within the given power
+[INFO ] 20/Jun/2016 14:01:24,218 PhysicalOperation [main] - calculateWalkDistance - Distance calculated
+[INFO ] 20/Jun/2016 14:01:24,218 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 14:01:24,218 PhysicalOperation [main] - powerConsume - Left power calculated
+[INFO ] 20/Jun/2016 16:10:08,975 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 16:10:08,977 PhysicalOperation [main] - powerConsume - Left power calculated

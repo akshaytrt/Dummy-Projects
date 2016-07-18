@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="log-path">C:/Users/athora0/Projects/my-intern-training-project/Assignment_5/Logs
+		</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="RollingFile" fileName="${log-path}/Robot_log.log"
+			filePattern="${log-path}/Robot_log-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout>
+				<pattern>[%-5level] %d{dd/MMM/yyyy HH:mm:ss,SSS} %C{1} [%t] - %M - %msg%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="1 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>[%-5level] %d{dd/MMM/yyyy HH:mm:ss,SSS} %C{1} [%t] - %M - %msg%n
+				</pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.sears.corps.helper" level="fatal">
+			<AppenderRef ref="RollingFile" level="all" />
+			<AppenderRef ref="console" level="all" />
+		</Logger>
+		<Root level="all" additivity="false">
+			<AppenderRef ref="RollingFile" level="all" />
+			<AppenderRef ref="console" level="all" />
+		</Root>
+
+	</Loggers>
+
+
+</Configuration>

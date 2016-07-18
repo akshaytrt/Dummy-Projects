@@ -1,0 +1,10 @@
+[INFO ] 20/Jun/2016 13:58:27,973 RobotAPI [main] - main - Added Weight: 2.0
+[INFO ] 20/Jun/2016 13:58:28,062 RobotAPI [main] - main - How far robot should go :3.0
+[INFO ] 20/Jun/2016 13:58:28,062 PhysicalOperation [main] - calculateWalkDistance - Calculating the distance that robot should walk within the given power
+[INFO ] 20/Jun/2016 13:58:28,062 PhysicalOperation [main] - calculateWalkDistance - Distance calculated
+[INFO ] 20/Jun/2016 13:58:28,062 PhysicalOperation [main] - powerConsume - Calculating the power left after performing walk operation
+[INFO ] 20/Jun/2016 13:58:28,063 PhysicalOperation [main] - powerConsume - Left power calculated
+[ERROR] 20/Jun/2016 13:59:09,251 Robot [main] - checkDistance - Robot cannot walk more than 5 km
+[ERROR] 20/Jun/2016 13:59:17,271 Robot [main] - checkWeight - Overweight...Robot can't pick more than 10 Kg weight
+[INFO ] 20/Jun/2016 14:00:04,145 RobotAPI [main] - main - Initialised the Robot attributes
+[INFO ] 20/Jun/2016 14:00:04,148 RobotAPI [main] - main - Power: 100.0

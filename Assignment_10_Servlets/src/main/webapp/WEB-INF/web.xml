@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ServletDemo</servlet-name>
+  	<display-name>ServletDemo</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.ServletDemo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletGoogleSearch</servlet-name>
+  	<display-name>ServletGoogleSearch</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.google.ServletGoogleSearch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GoogleSearchServlet</servlet-name>
+  	<display-name>GoogleSearchServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.google.GoogleSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DateTimeServlet</servlet-name>
+  	<display-name>DateTimeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.dateTime.DateTimeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletCounterA</servlet-name>
+  	<display-name>ServletCounterA</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.servletCounters.ServletCounterA</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletCounterB</servlet-name>
+  	<display-name>ServletCounterB</display-name>
+  	<description></description>
+  	<servlet-class>com.sears.corps.demo.servletCounters.ServletCounterB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletDemo</servlet-name>
+  	<url-pattern>/ServletDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletGoogleSearch</servlet-name>
+  	<url-pattern>/ServletGoogleSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GoogleSearchServlet</servlet-name>
+  	<url-pattern>/GoogleSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DateTimeServlet</servlet-name>
+  	<url-pattern>/DateTimeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletCounterA</servlet-name>
+  	<url-pattern>/ServletCounterA</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletCounterB</servlet-name>
+  	<url-pattern>/ServletCounterB</url-pattern>
+  </servlet-mapping>
+</web-app>

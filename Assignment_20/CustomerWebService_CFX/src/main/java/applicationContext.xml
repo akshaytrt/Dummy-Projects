@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd 	http://cxf.apache.org/jaxrs
+ 	http://cxf.apache.org/schemas/jaxrs.xsd ">
+	
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	<!-- to activate annotations in beans already registered in the application 
+		context -->
+	<context:annotation-config />
+
+	<!-- scans packages to find and register beans within the application context -->
+	<context:component-scan base-package="com.sears.corps" />
+	<bean id="jsonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+	<bean id="CustomerServiceImpl" class="com.sears.corps.services.impl.CustomerServiceImpl"/>
+	<jaxrs:server id="restContainer" address="/*">
+		<jaxrs:serviceBeans>
+			<ref bean="CustomerServiceImpl"/>
+			<ref bean="jsonProvider"/>
+		</jaxrs:serviceBeans>
+	</jaxrs:server>
+	
+	<!-- dataSource configuration -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://172.29.81.150:3306/athora0" />
+		<property name="username" value="athora0" />
+		<property name="password" value="athora0" />
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+</beans>
